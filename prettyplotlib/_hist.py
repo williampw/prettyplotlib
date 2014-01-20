@@ -1,8 +1,10 @@
 __author__ = 'olga'
 
 from prettyplotlib.utils import remove_chartjunk, maybe_get_ax
+from prettyplotlib.colors import pretty
 
 
+@pretty
 def hist(*args, **kwargs):
     """
     Plots a histogram of the provided data. Can provide optional argument
