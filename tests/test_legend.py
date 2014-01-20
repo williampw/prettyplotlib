@@ -12,7 +12,7 @@ def test_legend():
     # Set the random seed for consistency
     np.random.seed(12)
 
-    fig, ax = plt.subplots(1)
+    fig, ax = ppl.subplots(1)
 
     # Show the whole color range
     for i in range(8):
