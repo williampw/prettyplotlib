@@ -13,3 +13,8 @@ def subplots(*args, **kwargs):
 @pretty
 def subplot2grid(*args, **kwargs):
     return plt.subplot2grid(*args, **kwargs)
+
+@wraps(plt.subplot)
+@pretty
+def subplot(*args, **kwargs):
+    return plt.subplot(*args, **kwargs)
