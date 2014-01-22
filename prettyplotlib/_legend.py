@@ -23,7 +23,7 @@ def legend(*args, **kwargs):
     if 'scatterpoints' not in kwargs:
         kwargs['scatterpoints'] = True
 
-    legend = ax.legend(**kwargs)
+    legend = ax.legend(*args, **kwargs)
     try:
         rect = legend.get_frame()
         rect.set_facecolor(facecolor)
